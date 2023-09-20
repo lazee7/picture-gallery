@@ -38,7 +38,7 @@ In order to run this project you need:
         >
   visit
   </a>
-- Firebase account + project config keys <a href="firebase.googgle.com"  target='_blank'
+- Firebase account + project config keys <a href="https://firebase.googgle.com"  target='_blank'
           referrerPolicy='no-referrer'>visit</a>
 
 ### Setup
