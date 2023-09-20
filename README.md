@@ -35,11 +35,11 @@ In order to run this project you need:
           href='https://pixabay.com/api/docs/'
           target='_blank'
           referrerPolicy='no-referrer'
-          className='text-blue-500 underline'
         >
   visit
   </a>
-- Firebase account + project config keys <a href="firebase.googgle.com">visit</a>
+- Firebase account + project config keys <a href="firebase.googgle.com"  target='_blank'
+          referrerPolicy='no-referrer'>visit</a>
 
 ### Setup
 
