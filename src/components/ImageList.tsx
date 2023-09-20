@@ -22,8 +22,10 @@ type ImageListProp = {
 
 const ImageList = ({ images, setImages }: ImageListProp) => {
   const sensors = useSensors(useSensor(MouseSensor), useSensor(TouchSensor));
-  function handleDragEnd(event: DragEndEvent) {
+
+  const handleDragEnd = (event: DragEndEvent) => {
     if (!images) return null;
+
     const { active, over } = event;
     if (active?.id === over?.id) return;
     setImages(() => {
@@ -32,7 +34,8 @@ const ImageList = ({ images, setImages }: ImageListProp) => {
 
       return arrayMove(images, oldIndex, newIndex);
     });
-  }
+  };
+
   if (!images) return null;
 
   if (images?.length === 0)
@@ -48,9 +51,9 @@ const ImageList = ({ images, setImages }: ImageListProp) => {
         onDragEnd={handleDragEnd}
       >
         <SortableContext items={images} strategy={rectSortingStrategy}>
-          {images.length > 0
-            ? images.map((image) => <Card key={image.id} image={image} />)
-            : null}
+          {images.map((image) => (
+            <Card key={image.id} image={image} />
+          ))}
         </SortableContext>
       </DndContext>
     </div>
