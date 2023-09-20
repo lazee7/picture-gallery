@@ -31,6 +31,15 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 - node v18.17.1
+- Pixabay API key <a
+          href='https://pixabay.com/api/docs/'
+          target='_blank'
+          referrerPolicy='no-referrer'
+          className='text-blue-500 underline'
+        >
+  visit
+  </a>
+- Firebase account + project config keys <a href="firebase.googgle.com">visit</a>
 
 ### Setup
 
