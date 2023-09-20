@@ -15,9 +15,29 @@ const Card = ({ image }: { image: Image }) => {
       {...attributes}
       style={styles}
       {...listeners}
-      className='w-72 h-72 hover:rotate-1 transform transition-all duration-100'
+      className={``}
     >
-      <img src={image.webformatURL} alt='' className='w-full object-cover' />
+      <div
+        className={`flex justify-center items-center h-72 overflow-hidden md:w-72 lg:w-60 rounded-md`}
+      >
+        <img
+          src={image.webformatURL}
+          alt=''
+          id={`${image.id}`}
+          loading='lazy'
+          className='object-cover w-full h-full'
+        />
+      </div>
+      <ul className='flex gap-2 flex-wrap py-3'>
+        {image.tags.split(', ').map((item, index) => (
+          <li
+            key={index}
+            className='border bg-pink-200 py-1 rounded-lg px-2 text-xs'
+          >
+            {item}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

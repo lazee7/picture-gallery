@@ -20,7 +20,7 @@ const Header = () => {
     }
   };
   return (
-    <header className='sticky bg-gradient-to-tr top-0 from-secondary py-8 px-10 lg:px-20 to-primary via-btn flex  justify-between items-center'>
+    <header className='sticky bg-gradient-to-tr top-0 from-secondary py-6 px-10 lg:px-20 to-primary via-btn flex  justify-between items-center z-50'>
       <h1 className='text-4xl capitalize text-white font-bold tracking-widest italic'>
         la<span className='text-btn'>za</span>ria
       </h1>
