@@ -37,7 +37,7 @@ const Home = () => {
   if (isLoading) return <Skeleton />;
 
   const filteredImages = data
-    ? data.filter((image) => image.tags.includes(query))
+    ? data.filter((image) => image.tags.includes(query.toLocaleLowerCase()))
     : null;
 
   return (
@@ -49,7 +49,7 @@ const Home = () => {
           id='query'
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className='w-full md:w-1/2 border py-2 focus:outline-none px-6 rounded-xl bg-form shadow-primary shadow-sm text-white'
+          className='w-2/3 sl:w-1/2 border py-2 focus:outline-none px-6 rounded-xl bg-form shadow-primary shadow-sm text-white'
           placeholder='search for images by tags'
         />
       </div>

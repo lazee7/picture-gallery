@@ -15,7 +15,7 @@ const Card = ({ image }: { image: Image }) => {
       {...attributes}
       style={styles}
       {...listeners}
-      className={``}
+      className=' transition-transform hover:scale-[0.95] duration-75 transform'
     >
       <div
         className={`flex justify-center items-center h-72 overflow-hidden md:w-72 lg:w-60 rounded-md`}

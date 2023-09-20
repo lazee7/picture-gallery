@@ -19,6 +19,16 @@ export default {
         primary: '#E286F4',
         btn: '#5C62EC',
       },
+
+      animation: {
+        slide: 'slide 0.2s ease-in-out 1',
+      },
+      keyframes: {
+        slide: {
+          from: { transform: 'translateY(-30px)' },
+          to: { transform: 'translateY(0)' },
+        },
+      },
     },
   },
   plugins: [],

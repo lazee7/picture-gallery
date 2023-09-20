@@ -44,7 +44,7 @@ const ImageList = ({ images, setImages }: ImageListProp) => {
     );
 
   return (
-    <div className='grid sl:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-7 gap-x-5 px-6 py-4'>
+    <div className='grid sl:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-7 gap-x-7 px-16 py-4'>
       <DndContext
         sensors={sensors}
         collisionDetection={closestCenter}
