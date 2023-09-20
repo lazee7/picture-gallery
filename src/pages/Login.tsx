@@ -20,6 +20,7 @@ const Login = () => {
     },
   });
 
+  // state for when user submits to display spinner
   const [isSending, setIsSending] = useState(false);
 
   const { user } = useAuth() as AuthType;

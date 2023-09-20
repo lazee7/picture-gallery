@@ -21,6 +21,7 @@ type ImageListProp = {
 };
 
 const ImageList = ({ images, setImages }: ImageListProp) => {
+  // handle drag and drop on mobile and desktop. from the dndkit library
   const sensors = useSensors(useSensor(MouseSensor), useSensor(TouchSensor));
 
   const handleDragEnd = (event: DragEndEvent) => {
@@ -38,7 +39,8 @@ const ImageList = ({ images, setImages }: ImageListProp) => {
 
   if (!images) return null;
 
-  if (images?.length === 0)
+  // when user's search query doesn't produce results
+  if (images.length === 0)
     return (
       <p className='text-center py-20 text-xl text-white'>no images found...</p>
     );

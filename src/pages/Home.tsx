@@ -32,8 +32,11 @@ const Home = () => {
       }, 1000);
     }
   };
+
+  // redirect unauthenticated users to login page
   if (!user) return <Navigate to={'login'} />;
 
+  // display loading skeleton while images are fetched
   if (isLoading) return <Skeleton />;
 
   const filteredImages = data
