@@ -1,27 +1,71 @@
-# React + TypeScript + Vite
+### About Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Stage Three HNGX Internship
 
-Currently, two official plugins are available:
+Task: Develop a Drag-and-Drop Image gallery using React or Next Js
+Objective: You will implement a fully functional and responsive image gallery that showcases a collection of images in a visually appealing way.
+A user should be able to Login to the gallery page. Authenticated users should be able to use the Drag-and-Drop feature, they should be able to select and drag images, effortlessly rearranging them within the gallery.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Requirements:
 
-## Expanding the ESLint configuration
+- Simple Authentication:
+  This means login with this email and password:
+  UserName: user@example.com
+  Password: 1Password
+  The authentication form fields should have proper validation setup, with proper error messages
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Image Display
+- Loading state
+- Search Functionality
+- Drag-and-Drop
+- User-friendly Feedback
+- Responsive Design
+- Design Flexibility
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+- node v18.17.1
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```
+  cd my-folder
+  git clone git@github.com:lazee7/image-gallery.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Install
+
+Install this project with:
+
+```sh
+  cd image-gallery
+  npm install
+```
+
+Create a .env file for environment variables. sample below
+
+```
+VITE_API_KEY='your pixabay api key'
+VITE_FIREBASE_API_KEY='firebase api key'
+VITE_AUTH_DOMAIN='firebase auth domain'
+VITE_PROJECT_ID='firebaseproject id'
+VITE_STORAGE_BUCKET='firebase storage bucket'
+VITE_MESSAGING_SENDER_ID='firebase messaging sender id'
+VITE_APP_ID='firebase app id'
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  npm run dev
+```
